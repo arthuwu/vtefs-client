@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    position: relative;
+    background-color: #3a3b3b;
+    font-family: Noto Sans Mono;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.board-container {
+    background-color: white;
+    width: calc(100vh * 4 / 3);
+    height: 100vh;
+    margin: auto;
+}
+
+.stripboard {
+    width: 100%;
+    height: 94.1%;
+    border: 1px solid black;
+}
+
+.bottombar {
+    width: 100%;
+    height: 5.9%;
+    border: 1px solid black;
+}
+
+.stripbay-container {
+    border: 1px solid black;
+}
+
+.stripbay-header {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 0.8em;
+}

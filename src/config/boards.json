@@ -1,0 +1,80 @@
+{
+    "boards": [
+        {
+            "id": "GMCA",
+            "name": "GMC ALL",
+            "cropped": "right",
+            "columns": [
+                [
+                    {
+                        "id": "PEND",
+                        "name": "Pending",
+                        "height": 10
+                    },
+                    {
+                        "id": "CDCS",
+                        "name": "CDC Ready to Start",
+                        "height": -1
+                    }
+                ],
+                [
+                    {
+                        "id": "ACTV",
+                        "name": "Active",
+                        "height": -1
+                    }
+                ],
+                [
+                    {
+                        "id": "AMST",
+                        "name": "AMS Transfer",
+                        "height": 7
+                    },
+                    {
+                        "id": "AMMT",
+                        "name": "AMM Transfer",
+                        "height": 6
+                    },
+                    {
+                        "id": "AMNT",
+                        "name": "AMN Transfer",
+                        "height": -1
+                    }
+                ]
+            ]
+        },
+        {
+            "id": "CDC",
+            "name": "CDC",
+            "cropped": "left",
+            "columns": [
+                [
+                    {
+                        "id": "PEND",
+                        "name": "Pending Clearance",
+                        "height": -1
+                    }
+                ],
+                [
+                    {
+                        "id": "CLRQ",
+                        "name": "Clearance Request",
+                        "height": -1
+                    }
+                ],
+                [
+                    {
+                        "id": "ATCC",
+                        "name": "ATC Clearance",
+                        "height": 8
+                    },
+                    {
+                        "id": "RTST",
+                        "name": "Ready to Start",
+                        "height": -1
+                    }
+                ]
+            ]
+        }
+    ]
+}
