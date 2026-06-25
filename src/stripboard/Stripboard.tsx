@@ -20,7 +20,11 @@ function getRowSpacing(column: Bay[]): string {
 }
 
 const Stripboard = () => {
-    const { currentBoard } = useBoardContext();
+    const boardContext = useBoardContext();
+
+    if (!boardContext) return;
+
+    const { currentBoard } = boardContext;
 
     if (!currentBoard) {
         return null;
@@ -35,7 +39,7 @@ const Stripboard = () => {
                 }}
             >
                 {currentBoard.columns.map(
-                    (column, columnIndex) => (
+                    (column, columnIndex): any => (
                         <div
                             key={columnIndex}
                             style={{
@@ -43,7 +47,7 @@ const Stripboard = () => {
                                 gridTemplateRows: getRowSpacing(column),
                             }}
                         >
-                            {column.map(bay => (
+                            {column.map((bay: any) => (
                                 <StripBay
                                     key={bay.id}
                                     name={bay.name}

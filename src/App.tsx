@@ -1,3 +1,4 @@
+import { StrictMode } from 'react';
 import BottomBar from './stripboard/BottomBar';
 import Stripboard from './stripboard/Stripboard';
 import './index.css'
@@ -7,7 +8,7 @@ import { BoardProvider } from './stripboard/BoardContext';
 
 function App() {
   return (
-    <>
+    <StrictMode>
       <BoardProvider boardsData={boardData.boards}>
         <WebSocketProvider url="ws://localhost:8080">
           <div className='board-container'>
@@ -16,7 +17,7 @@ function App() {
           </div>
         </WebSocketProvider>
       </BoardProvider>
-    </>
+    </StrictMode>
   )
 }
 

@@ -1,11 +1,15 @@
 import { useBoardContext } from "./BoardContext";
 
 export function BoardSelector() {
+    const boardContext = useBoardContext();
+
+    if (!boardContext) return;
+
     const {
         boards,
         currentBoardId,
         setCurrentBoard,
-    } = useBoardContext();
+    } = boardContext;
 
     return (
         <select
@@ -14,7 +18,7 @@ export function BoardSelector() {
                 setCurrentBoard(e.target.value)
             }
         >
-            {boards.map(board => (
+            {boards.map((board: any) => (
                 <option
                     key={board.id}
                     value={board.id}

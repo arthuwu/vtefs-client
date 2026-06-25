@@ -1,4 +1,4 @@
-const StripBay = ({ name }) => {
+const StripBay = ({ name }: any) => {
     return (
         <>
             <div className="stripbay-container">
